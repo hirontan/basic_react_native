@@ -3,6 +3,8 @@
 ## 開発環境
 - https://reactnative.dev/docs/environment-setup
   - `React Native CLI Quickstart`のタブを参考にする
+  - `Development OS`: macOS
+  - `Target OS`: Android
 
 ### Node & Watchman
 ```
