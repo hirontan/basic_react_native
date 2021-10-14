@@ -14,5 +14,10 @@ xcode-select --install
 brew install watchman
 ```
 
+### Java Development Kit
+```
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
+```
+
 ## 参考
 - [React Native](https://reactnative.dev/)
