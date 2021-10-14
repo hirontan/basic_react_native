@@ -9,6 +9,8 @@
 ### Node & Watchman
 ```
 brew install node
+
+xcode-select --install
 brew install watchman
 ```
 
