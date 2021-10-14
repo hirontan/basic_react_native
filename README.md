@@ -19,5 +19,8 @@ brew install watchman
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 ```
 
+### Android Studio
+- https://developer.android.com/studio
+
 ## 参考
 - [React Native](https://reactnative.dev/)
