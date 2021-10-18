@@ -74,5 +74,17 @@ npx react-native start
 npx react-native run-android
 ```
 
+### iOS
+```
+cd hello_world
+yarn
+cd ios
+pod deintegrate
+pod install
+cd ../
+npx react-native start
+npx react-native run-ios
+```
+
 ## 参考
 - [React Native](https://reactnative.dev/)
