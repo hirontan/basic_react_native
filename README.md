@@ -64,5 +64,15 @@ npx react-native init xxxxxx --template react-native-template-typescript
   - こちらのリンクから対応
     - https://support.genymotion.com/hc/en-us/articles/4405183363601--An-error-has-occurred-while-trying-to-create-a-virtualbox-host-only-network-interface-when-launching-Genymotion-Desktop-
 
+## HelloWorldの起動
+
+### Android
+```
+cd hello_world
+yarn
+npx react-native start
+npx react-native run-android
+```
+
 ## 参考
 - [React Native](https://reactnative.dev/)
