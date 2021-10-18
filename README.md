@@ -32,6 +32,15 @@ sdkmanager "platforms;android-29" "system-images;android-29;default;x86_64" "sys
 sdkmanager "cmdline-tools;latest" "build-tools;29.0.2"
 ```
 
+##### `ANDROID_HOME`の環境変数を設定
+```
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
 ### 初期プロジェクトの作成
 ```
 npx react-native init xxxxxx(適切なプロジェクト名をつけてください)
