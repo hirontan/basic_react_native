@@ -46,5 +46,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 npx react-native init xxxxxx(適切なプロジェクト名をつけてください)
 ```
 
+##### TypeScriptを利用する場合
+```
+npx react-native init xxxxxx --template react-native-template-typescript
+```
+
 ## 参考
 - [React Native](https://reactnative.dev/)
