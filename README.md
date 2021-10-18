@@ -4,7 +4,7 @@
 - https://reactnative.dev/docs/environment-setup
   - `React Native CLI Quickstart`のタブを参考にする
   - `Development OS`: macOS
-  - `Target OS`: Android または iOS
+  - `Target OS`: Android
 
 ### Node & Watchman
 ```
@@ -21,6 +21,16 @@ brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 
 ### Android Studio
 - https://developer.android.com/studio
+
+##### `Android SDK`をインストール
+- Android Studioを起動し、`Appearance & Behavior` → `System Settings` → `Android SDK`で画面を開く
+- `Android 10 (Q)`をチェックし、インストール
+- その後、下記を実行
+
+```
+sdkmanager "platforms;android-29" "system-images;android-29;default;x86_64" "system-images;android-29;google_apis;x86"
+sdkmanager "cmdline-tools;latest" "build-tools;29.0.2"
+```
 
 ### 初期プロジェクトの作成
 ```
