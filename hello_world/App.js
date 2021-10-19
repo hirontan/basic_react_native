@@ -71,7 +71,7 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Add">
-            Hello World
+            <HelloWorld />
           </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.js</Text> to change this
@@ -92,6 +92,14 @@ const App: () => Node = () => {
     </SafeAreaView>
   );
 };
+
+const HelloWorld = () => {
+  return (
+    <View>
+      <Text>Hello World Component</Text>
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
   sectionContainer: {
