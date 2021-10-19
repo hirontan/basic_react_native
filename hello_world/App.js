@@ -6,9 +6,10 @@
  * @flow strict-local
  */
 
-import React, {Component} from 'react';
+import React, {useState, Component} from 'react';
 import type {Node} from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -59,9 +60,7 @@ const App: () => Node = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  state = {
-    message: 'Message',
-  }
+  const [message, setMessage] = useState('Message');
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -76,7 +75,10 @@ const App: () => Node = () => {
           }}>
           <Section title="Add">
             <HelloWorld />
-            {this.state.message}
+            {message}
+          </Section>
+          <Section>
+            <Button onPress={() => setMessage('Click OK!')} title="Click me!" />
           </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.js</Text> to change this
