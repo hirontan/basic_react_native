@@ -51,19 +51,6 @@ npx react-native init xxxxxx(適切なプロジェクト名をつけてくださ
 npx react-native init xxxxxx --template react-native-template-typescript
 ```
 
-### Genymotionのインストール
-- https://www.genymotion.com/download/
-
-##### Virtual Boxのインストール
-- https://www.oracle.com/jp/virtualization/technologies/vm/downloads/virtualbox-downloads.html
-
-##### Genymotion起動
-
-- 起動時にエラー
-  - `An error has occurred while trying to create a VirtualBox host-only network interface.`
-  - こちらのリンクから対応
-    - https://support.genymotion.com/hc/en-us/articles/4405183363601--An-error-has-occurred-while-trying-to-create-a-virtualbox-host-only-network-interface-when-launching-Genymotion-Desktop-
-
 ## HelloWorldの起動
 
 ### Android
