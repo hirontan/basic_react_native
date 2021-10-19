@@ -74,8 +74,7 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Add">
-            <HelloWorld />
-            {message}
+            <HelloWorld msg={message} />
           </Section>
           <Section>
             <Button onPress={() => setMessage('Click OK!')} title="Click me!" />
@@ -113,6 +112,7 @@ class HelloWorld extends Component {
     return (
       <View>
         <Text>Hello World Component</Text>
+        <Text>{this.props.msg}</Text>
       </View>
     );
   }
