@@ -112,7 +112,7 @@ class HelloWorld extends Component {
     return (
       <View>
         <Text>Hello World Component</Text>
-        <Text>{this.props.msg}</Text>
+        <Text style={styles.helloWorld}>{this.props.msg}</Text>
       </View>
     );
   }
@@ -121,7 +121,7 @@ class HelloWorld extends Component {
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
-    paddingHorizontal: 24,
+    paddingHorizontal: 12,
   },
   sectionTitle: {
     fontSize: 24,
@@ -134,6 +134,10 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  helloWorld: {
+    color: '#ff0033',
+    fontSize: 24,
   },
 });
 
