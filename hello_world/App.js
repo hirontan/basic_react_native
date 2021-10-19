@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {Component} from 'react';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -59,6 +59,10 @@ const App: () => Node = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
+  state = {
+    message: 'Message',
+  }
+
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
@@ -72,6 +76,7 @@ const App: () => Node = () => {
           }}>
           <Section title="Add">
             <HelloWorld />
+            {this.state.message}
           </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.js</Text> to change this
@@ -93,12 +98,22 @@ const App: () => Node = () => {
   );
 };
 
-const HelloWorld = () => {
-  return (
-    <View>
-      <Text>Hello World Component</Text>
-    </View>
-  );
+// const HelloWorld = () => {
+//   return (
+//       <View>
+//         <Text>Hello World Component</Text>
+//       </View>
+//     );
+// }
+
+class HelloWorld extends Component {
+  render() {
+    return (
+      <View>
+        <Text>Hello World Component</Text>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
